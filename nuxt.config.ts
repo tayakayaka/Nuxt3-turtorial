@@ -16,5 +16,15 @@ export default defineNuxtConfig({
     public: {
       apiBase: process.env.NUXT_PUBLIC_API_BASE || "xxxxxxxx",  
     }
-  }
-})
+  },
+  // ビルドツールに対してassets直下のSASSを追加するという設定
+  vite:{
+    css:{
+      preprocessorOptions:{
+        scss:{
+          additionalData:"@use 'assets/_colors.scss' as *;"
+        },
+      },
+    },
+  },
+});
