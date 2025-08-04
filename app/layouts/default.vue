@@ -13,7 +13,7 @@
 
 <style scoped>
 header, footer{
-    background-color: gray;
+    background-color: #5DFFBD;
     text-align: center;
     padding: 10px;
 }
