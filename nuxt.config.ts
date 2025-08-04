@@ -17,7 +17,7 @@ export default defineNuxtConfig({
       apiBase: process.env.NUXT_PUBLIC_API_BASE || "xxxxxxxx",  
     }
   },
-  // ビルドツールに対してassets直下のSASSを追加するという設定
+  // Add SASS files from the assets directory to the build tool
   vite:{
     css:{
       preprocessorOptions:{
